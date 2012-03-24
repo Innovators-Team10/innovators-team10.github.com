@@ -17,7 +17,7 @@ object {vertical-align:top}
 #contacts-form {clear:right;width:100%;overflow:hidden}
 #contacts-form fieldset {border:none;float:left}
 #contacts-form .field {clear:both;padding-bottom:7px;width:100%;overflow:hidden}
-#contacts-form label {float:left;width:79px;color:#2cb6e9;font-weight:bold}
+#contacts-form label {float:left;width:79px;color:#660000;font-weight:bold}
 #contacts-form input {width:240px;padding:2px 0 2px 3px;border:1px solid #d9d9d9;background:none}
 #contacts-form textarea {width:790px;height:192px;border:1px solid #d9d9d9;background:none;padding:2px 0 2px 3px;margin-bottom:15px;overflow:auto}
 #contacts-form .button {width:150px;float:right}
@@ -37,14 +37,14 @@ ul {list-style:none}
 .list3.color2 li {color:#ff8002}
 .list3.color3 li {color:#f32e10}
 .list3 li span {color:#404141 !important}
-.list4 dt {font-weight:bold;margin-bottom:16px;color:#2cb6e9}
+.list4 dt {font-weight:bold;margin-bottom:16px;color:#660000}
 .list4 dd {padding-bottom:16px}
 .carousel {width:100%;overflow:hidden}
 .carousel li {float:left;margin-right:15px}
 .carousel li.prev {margin-right:17px;padding-top:74px}
 .carousel li.next {margin-right:0;padding-top:74px}
 .phones-list li {width:100%;overflow:hidden;padding-bottom:16px}
-.phones-list li strong {float:left;width:69px;color:#2cb6e9}
+.phones-list li strong {float:left;width:69px;color:#660000}
 /* other */
 .img-indent {margin:0 20px 0 0;float:left}
 .img-indent.fright {float:right;margin:0 0 0 20px}
@@ -53,17 +53,17 @@ ul {list-style:none}
 .img-box img {float:left;margin:0 20px 0 0}
 .extra-wrap {overflow:hidden}
 /* txt,links,lines,titles */
-a {color:#2cb6e9;outline:none}
+a {color:#660000;outline:none}
 a:hover{text-decoration:none}
 h1 {font-size:3em;line-height:1em;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;color:#fff;font-weight:normal;letter-spacing:-1px;width:400px;margin-bottom:42px}
 h2 {font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;font-size:22px;line-height:1em;font-weight:normal;margin-bottom:23px;color:#515151}
 h2.alt {letter-spacing:-1px}
 h3 {font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;font-size:1.5em;line-height:1.1em;margin-bottom:10px}
 h4 {font-size:.91em;margin-bottom:10px}
-h4 strong {font-size:1.1em;color:#2cb6e9;display:block}
+h4 strong {font-size:1.1em;color:#660000;display:block}
 h5 {font-size:1em;margin-bottom:5px}
 h6 {font-size:1em;font-weight:normal}
-.txt1 {color:#2cb6e9}
+.txt1 {color:#660000}
 /* header */
 #header .row-1 {height:137px}
 #header .logo {float:left;padding:22px 0 0 10px}
@@ -75,25 +75,25 @@ h6 {font-size:1em;font-weight:normal}
 /* header navigation */
 #header .nav-box ul {font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}
 #header .nav-box ul li {display:inline}
-#header .nav-box ul li a {display:block;float:left;color:#fff;text-decoration:none}
+#header .nav-box ul li a {display:block;float:left;color:#000;text-decoration:none}
 #header .nav-box ul li a em {display:block;float:left;font-style:normal;background:url(images/divider-left.gif) no-repeat left 10px}
-#header .nav-box ul li a em b {display:block;float:left;height:47px;line-height:47px;width:158px;text-align:center;background:url(images/divider-right.gif) no-repeat right 10px;cursor:pointer}
-#header .nav-box ul li a:hover {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a em b {display:block;float:left;height:47px;line-height:47px;width:131px;text-align:center;background:url(images/divider-right.gif) no-repeat right 10px;cursor:pointer}
+#header .nav-box ul li a:hover {background:url(images/nav-act-new.gif) left top repeat-x}
 #header .nav-box ul li a:hover em {background:url(images/divider-left-act.gif) no-repeat left 10px}
 #header .nav-box ul li a:hover b {background:url(images/divider-right-act.gif) no-repeat right 10px}
-#header .nav-box ul li a.current {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a.current {background:url(images/nav-act-new.gif) left top repeat-x}
 #header .nav-box ul li a.current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
 #header .nav-box ul li a.current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
 #header .nav-box ul li a.first em {background:none}
-#header .nav-box ul li a.first:hover em {background:url(images/nav-left-act.gif) no-repeat left top}
-#header .nav-box ul li a.first-current {background:url(images/nav-act.gif) left top repeat-x}
-#header .nav-box ul li a.first-current em {background:url(images/nav-left-act.gif) no-repeat left top !important}
+#header .nav-box ul li a.first:hover em {background:url(images/nav-act-new.gif) no-repeat left top}
+#header .nav-box ul li a.first-current {background:url(images/nav-act-new.gif) left top repeat-x}
+#header .nav-box ul li a.first-current em {background:url(images/nav-act-new.gif) no-repeat left top !important}
 #header .nav-box ul li a.first-current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
 #header .nav-box ul li a.last b {background:none;width:160px}
-#header .nav-box ul li a.last:hover b {background:url(images/nav-right-act.gif) no-repeat right top}
-#header .nav-box ul li a.last-current {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a.last:hover b {background:url(images/nav-act-new.gif) no-repeat right top}
+#header .nav-box ul li a.last-current {background:url(images/nav-act-new.gif) left top repeat-x}
 #header .nav-box ul li a.last-current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
-#header .nav-box ul li a.last-current b {background:url(images/nav-right-act.gif) no-repeat right top !important;width:160px}
+#header .nav-box ul li a.last-current b {background:url(images/nav-act-new.gif) no-repeat right top !important;width:160px}
 /* content */
 #content {padding:0 0 20px 0;background:#fff}
 #content .section {padding-bottom:20px}
@@ -143,7 +143,7 @@ h6 {font-size:1em;font-weight:normal}
 .box .right-top-corner {background:url(images/right-top-corner.gif) no-repeat right top}
 .box .left-bot-corner {background:url(images/left-bot-corner.gif) no-repeat left bottom;width:100%}
 .box .right-bot-corner {background:url(images/right-bot-corner.gif) no-repeat right bottom}
-.box .inner {padding:27px 35px 30px 34px}
+.box .inner {padding:27px 35px 30px 34px; text-align:justify}
 .box1 {background:#ededed;width:100%}
 .box1 .border-top {background:url(images/border-top.gif) repeat-x top}
 .box1 .border-bot {background:url(images/border-bot.gif) repeat-x bottom}
