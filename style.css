@@ -71,7 +71,7 @@ h6 {font-size:1em;font-weight:normal}
 #header .top-links li {float:left;margin-left:8px}
 #header .nav-box {background:url(images/nav-box-bg.gif) left top repeat-x;width:100%}
 #header .nav-box .left {background:url(images/nav-box-left.gif) no-repeat left top}
-#header .nav-box .right {background:url(images/nav-box-right.gif) no-repeat right top;height:47px}
+#header .nav-box .right {background:url(images/nav-box-right.gif) no-repeat right top;height:47px;}
 /* header navigation */
 #header .nav-box ul {font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}
 #header .nav-box ul li {display:inline}
@@ -85,15 +85,15 @@ h6 {font-size:1em;font-weight:normal}
 #header .nav-box ul li a.current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
 #header .nav-box ul li a.current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
 #header .nav-box ul li a.first em {background:none}
-#header .nav-box ul li a.first:hover em {background:url(images/nav-act-new.gif) no-repeat left top}
+#header .nav-box ul li a.first:hover em {background:url(images/nav-left-act.gif) no-repeat left top}
 #header .nav-box ul li a.first-current {background:url(images/nav-act-new.gif) left top repeat-x;}
-#header .nav-box ul li a.first-current em {background:url(images/nav-act-new.gif) no-repeat left top !important}
+#header .nav-box ul li a.first-current em {background:url(images/nav-left-act.gif) no-repeat left top !important}
 #header .nav-box ul li a.first-current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
 #header .nav-box ul li a.last b {background:none;width:160px}
 #header .nav-box ul li a.last:hover b {background:url(images/nav-act-new_hover.gif) no-repeat right top}
 #header .nav-box ul li a.last-current {background:url(images/nav-act-new.gif) left top repeat-x}
 #header .nav-box ul li a.last-current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
-#header .nav-box ul li a.last-current b {background:url(images/nav-act-new.gif) no-repeat right top !important;width:160px}
+#header .nav-box ul li a.last-current b {background:url(images/nav-right-act.gif) no-repeat right top !important;width:160px}
 /* content */
 #content {padding:0 0 20px 0;background:#fff}
 #content .section {padding-bottom:20px}
