@@ -1,138 +1,236 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+﻿<!DOCTYPE html>
+<html>
+
 <head>
-<title>TrollEdit</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta name="description" content="TrollEdit"/>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
-<script src="maxheight.js" type="text/javascript"></script>
-<!--[if lt IE 7]>
-	<link href="ie_style.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-<style type="text/css">
-.auto-style1 {
-	margin-left: 0px;
-}
-</style>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TrollEdit | new way of source code editing</title>
+<meta lang="en" name="description" content="TrollEdit - text editor with graphical elements. School project developed on FIIT STU" />
+<meta lang="en" name="keywords" content="trolledit, text editor, fiit, STU"/>
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script src="styles_scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript"  src="script.js"></script>
+
+
 </head>
-<body id="page1" onload="new ElementMaxHeight();">
-<!-- header -->
-	<div id="header">
-		<div class="container">
-			<div class="row-1">
-				<div class="logo" style="text-align: center"><a href="index.html">
-					<img alt="" src="images/TrollEdit_logo.png" height="80" class="auto-style1" /></a></div>
-			</div>
-			<div class="row-2">
-<!-- nav box begin -->
-				<div class="nav-box">
-					<div class="left">
-						<div class="right">
-							<ul>
-								<li><a href="index.html" class="first-current"><em><b>HOME</b></em></a></li>
-								<li><a href="about-us.html"><em><b>ABOUT US</b></em></a></li>
-								<li><a href="motivation.html"><em><b>MOTIVATION</b></em></a></li>
-								<li><a href="technologies.html"><em><b>TECHNOLOGIES</b></em></a></li>
-								<li><a href="user-manual.html"><em><b>USER MANUAL</b></em></a></li>
-								<li><a href="downloads.html"><em><b>DOWNLOADS</b></em></a></li>
-								<li><a href="contact.html" class="last"><em><b>CONTACT</b></em></a></li>
-							</ul>
-						</div>
+
+<body>
+
+<div class="wrapper">
+<header id="head">
+  
+  <!-- label fork me  -->
+  <a href="https://github.com/Innovators-Team10/TrollEdit" id="github">
+      <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" />
+  </a>
+  
+   
+  
+   <nav id="navigation">
+   	<ul id="top-menu" class="menu">
+   		<li><a href="#about">About</a> </li>
+   		<li><a href="#download">Download</a></li>
+   		<li><a href="#team">Team</a> </li>
+   		<li><a href="#contact">Contact</a></li>
+   	</ul>
+   </nav>
+   
+   <div id="panel">
+     <div id="logo">
+       <img alt="logo-trolledit"src="img/logo.png">
+     </div>
+   </div>  
+   <img alt="scrolling-logo" src="img/start.png" id="show-content">
+</header>
+
+<br/>
+<br/>
+
+<div id="content">
+
+	<!--About -->
+	<section id="about">
+		<h2 class="title"> About this <span class="red">project</span></h2>
+		<table>
+			<tr>
+				<td style="width: 639px"> 
+					<p class="text">Today programmers use editors and IDEs that usually use simple color highlighting without any sign of graphic enrichment features. 
+					However enriching the source code with graphic elements can be beneficial for the understanding of the structure of given code and thus lead to 
+					better understanding of its structure and meaning for the programmer. This basic observation is the driving idea behind TrollEdit.
+					</p>
+					<p class="text">TrollEdit is a school experimental editor that tries to enrich source code with graphical elements for easier manipulation.
+	 				Source code editing can sometimes be very problematic especially when reviewing unknown code that the programmer is not familiar with. 
+	 				Most of the time programmers are trying to familiarize themselves with the syntax of the source and only then follow to analyze its semantic meaning. 
+	 				TrollEdit tries to address both of these steps by enriching the text editor with graphical elements instead of relying on colorized text. 
+	 				TrollEdit is a running project, which started as a research idea by Dr. Peter Drahoš (Researcher on FIIT STU).
+	 				</p>
+		    	</td>
+		    	<td>
+		    		<div id="new_way">
+					<img alt="new-way" src="img/new_way.png" class="auto-style3"></div>
+		    	</td>
+			</tr>
+		</table>
+		<p class="line"></p>
+		<p class="center"><img alt="classial-editor" src="img/classical_editor.png"></p> 	
+		<p class="line"></p>
+		<p class="center"> <img alt="" src="img/ideas.png" class="padding"></p>
+		<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
+	
+	<!-- Technology-->
+	<div>	
+		<h2 class="title2"> Used <span class="red">technology</span></h2>
+		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="tech" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
+	
+		<div id="tech-content">
+			<div class="padding"><img alt="used-technology" src="img/technology.png" class="center" onmouseover="this.src='img/technology2.png'"  onmouseout="this.src='img/technology.png'"></div>
+			<p class="text"> Trolledit is a desktop application based on multiplatform Qt framework. Basically TrollEdit is an enhanced text editor developed as a real market product. 
+		  	It's strongest feature is based on graphical text enrichment based on semantically analyzed file content.
+			</p>
+			<p class="text"> The core functionality of TrollEdit is based on the use of LPeg pattern matching library. Using this library we are able to parse source code according to 
+        	its grammar into an abstract syntactic tree (AST). This data is then used to enhance the text visualization and so we are able to parse the content on any
+        	open file assuming that we have a matching language grammar.
+			</p>
+			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>	
+		</div>
+	</div>
+
+	<!-- How to work-->
+	<div>
+		<h2 class="title2">How to <span class="red">work</span></h2>
+		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="work" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
+		<div id="work-content">
+			<div class="padding"><p class="center"><img alt="how-to-work" src="img/How_to_work.png"></p></div>
+			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
+		</div>
+	</div> 
+	
+	<!--Screenshot-->
+	<div>
+		<h2 class="title2"> How to <span class="red">look</span></h2>
+		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="screen" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
+		<div id="screen-content">
+			<!--Slider-->
+			<div id="pageContainer">
+				<div id="slideshow">
+    				<div id="slidesContainer">
+      					<div class="slide">
+      	    				<img src="img/slide1.png" alt="slide1">
+        				</div>     
+        	   
+      					<div class="slide">
+      						<img src="img/slide2.png" alt="slide2">        
+     					</div>
+     		
+      					<div class="slide">
+       						<img src="img/slide3.png" alt="slide3">
+      					</div>
 					</div>
-				</div>
-<!-- nav box end -->
+				</div>  
 			</div>
+			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
 		</div>
 	</div>
-<!-- content -->
-	<div id="content">
-		<div class="container">
-
-<!-- box begin -->
-			<div class="box">
-				<div class="border-top">
-					<div class="border-right">
-						<div class="border-bot">
-							<div class="border-left">
-							<div class="inner">
-							<h2>Actualities</h2>
-							New online help <br/><br/>
-							Toolbar update - now there are available 4 kinds of toolbars: Basic, Format, Tools, Editor <br/><br/>
-							New functionalities - zoom in, zoom out, task list, bug list <br/><br/>
-							New grammar for todo list - a simple grammar for todo lists were added <br/><br/>
-							Basic featues in text-mode - undo, redo, copy, paste, cut, delete, selectAll <br/><br/> 
-							Multitabs - from now you can open and edit multiple document in tabs <br/><br/>
-							Shortcuts editing - from now you can define your own shortcuts (functionality is available: Options->Shortcuts) <br/><br/> 
-							2 modes editing - from now you can edit source code in 2 modes: text-mode and graphical-mode <br/><br/>
-							GUI improvements - user interface improvements were added <br/><br/>
-							
-							<h2>What is TrollEdit? </h2>
-							
-							<p>TrollEdit is a Qt based text editor developed by students at Slovak University of Technology. </p>
-<p>The main goal of the project is to teach students open source deveopmnet and team management.
-TrollEdit itself is an experiment to utilize full AST code analysis during writing of code.
-This can have benefits in various common tasks such as moving blocks of code, syntax checking,
-syntax highlighting etc.
-</p>
-
-<p>
-This repository contains a fork of the project which I modified to use CMake based build system 
-instead of the default qmake. Other modifications include statically linked in lpeg and reordered
-project file structure.
-</p>
-<p>
-Students project page (in Slovak):
-http://labss2.fiit.stuba.sk/TeamProject/2011/team10is-si/index.html
-</p>
-
-<p>
-Setting up in QTCreator (2.0 Beta recomended)
-- Open CMakeLists.txt in project browse dialog.
-- Configure CMake with no additional args.
-- Add argument "install" to build step "make", this will install builds to [path_to_project]/TrollEdit with all resources
-- Add custom executable pointing to [path_to_project]/TrollEdit/trolledit with workdir set to [path_to_project]/TrollEdit
-- Build/Debug/Code as needed
-</p>
-</br>
-<h2>TrollEdit features</h2>
-  <ul class="list2">
-							<li>Multiplatform editor</li>
-							<li>Multiplatform editor</li>
-							<li>Extensible for any language (proper grammar needed)</li>
-							<li>Documentation block support</li>
-							<li>Graphics visualization</li>
-							<li>Images support</li>
-							<li>Syntax control and highlighting</li>
-							<li>Multidocument support</li>
-		</ul>
-</p>
-                </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- box end -->
+	
+	<!--features-->
+	<div>
+		<h2 class="title2"> Actual <span class="red">features</span></h2>
+		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="features" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
+		<div id="features-content">
+			<p class=" center"><img alt="features" src="img/features.png"></p>
+			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
 		</div>
 	</div>
-<!-- footer -->
-	<div id="footer">
-		<div class="container">
-			<ul class="nav">
-			  <li><a href="index.html">Home</a>|</li>
-				<li><a href="about-us.html">About Us</a>|</li>
-				<li><a href="motivation.html">Motivation</a>|</li>
-				<li><a href="technologies.html">Technologies</a>|</li>
-				<li><a href="user-manual.html">User manual</a>|</li>
-				<li><a href="downloads.html">Downloads</a>|</li>
-				<li><a href="contact.html">Contact</a></li>			   		
-			</ul>
-			<div class="wrapper">
-				<div class="fleft">Copyright &copy; Innovators 2012</div>
-			</div>
+	
+	</section>
+
+	<!--download-->
+	<section id="download">
+		<h2 class="title">Download <span class="red">TrollEdit</span></h2>
+		<p id="worry">you have two choices</p>
+		<div class="center">
+			<a href="https://github.com/Innovators-Team10/TrollEdit/downloads"><img alt="download-install" src="img/down_instal.png" onmouseover="this.src='img/down_instal1.png'"  onmouseout="this.src='img/down_instal.png'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<a href="https://github.com/Innovators-Team10/TrollEdit"><img alt="download-code" src="img/down_code.png" onmouseover="this.src='img/down_code1.png'"  onmouseout="this.src='img/down_code.png'"></a>
+			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'" onmouseout="this.src='img/top.png'"></a></P>
 		</div>
+	</section>
+	
+	<!--Team-->
+	<section class="auto-style1" id="team">
+		<h2 class="title"> The members <span class="red">of team</span></h2>
+		<p class="center"><img alt="" src="img/timeline.png"></p>
+		<img alt="peter-drahos" src="img/peter_drahos.png">
+		<br>
+		<p class="title3">1st team Ufopak (2009-2010)</p>
+		<!-- first team-->
+		<img alt="andrej-fogelton" src="img/andrej_fogelton.png">
+		<img alt="jakub-ukrop" src="img/jakub_ukrop.png">
+		<img alt="martin-palo" src="img/martin_palo.png">
+		<br>
+		<img alt="ondrej-kallo" src="img/ondrej_kallo.png">
+		<img alt="peter-ondruska" src="img/peter_ondruska.png">
+		<br>
+		<p class="title3">2nd team Innovators (2011-2012)</p>
+		<!--second team-->	
+		<img alt="jozef-krajcovic" src="img/jozef_krajcovic.png">
+		<img alt="maros-jendrej" src="img/maros_jendrej.png">
+		<img alt="lubos-staracek" src="img/lubos_staracek.png">
+	    <br>
+	    <img alt="lukas-tursky" src="img/lukas_tursky.png">
+	    <img alt="adrian-fejes" src="img/adrian_fejes.png">
+	    <br>
+		<a class="padding" href="mailto:trolledit@googlegroups.com"><img class="obr" alt="you?" src="img/you.png" onmouseover="this.src='img/you1.png'"  onmouseout="this.src='img/you.png'" ></a>
+		<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
+		<br><br><br>
+	</section>
+     
+	<!-- Contact-->
+	<section class="contact" id="contact">
+		<p class="title"> Contact <span class="red">us</span></p>
+		<table>
+			<tr>
+				<td style="width: 483px">
+					<a href="mailto:trolledit@googlegroups.com"><img alt="repo of trolledit" src="img/email.png" onmouseover="this.src='img/email2.png'"  onmouseout="this.src='img/email.png'"></a>
+					<br>
+					<br>
+					<a href="https://github.com/Innovators-Team10/TrollEdit"><img alt="mail" src="img/repo.png" onmouseover="this.src='img/repo2.png'"  onmouseout="this.src='img/repo.png'"></a>
+					<br>
+					<br>
+					<a href="http://www.fiit.stuba.sk/"><img alt="mail" src="img/fiit.png" onmouseover="this.src='img/fiit2.png'"  onmouseout="this.src='img/fiit.png'"></a>
+	
+				</td>
+				<td>
+					<a href="http://goo.gl/maps/D1eu" target="_blank">
+					<img alt="addres" src="img/map.png" class="auto-style2" onmouseover="this.src='img/map1.png'"  onmouseout="this.src='img/map.png'"></a>
+					<br>
+				</td>
+			</tr>	
+		</table>
+		<br><br>
+		<p id="worry">Don´t worry and send us e-mail</p>
+		<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'" onmouseout="this.src='img/top.png'"></a></P>
+	</section> 
+
+	<div>
+		<p id="end"><img alt="end" src="img/end.png"></p>
 	</div>
+ 
+	<!--Footer-->
+	<footer id="foot">
+		<nav id="navigation">
+			<div id="bottom-nav"> 
+	   			<a href="#about">About	|</a> 
+	   			<a href="#team">Team	|</a> 
+	   			<a href="#download">Download	|</a>
+	   			<a href="#contact">Contact</a>
+	   			<div id="foot-copyright">&copy; 2012 TrollEdit - Design by Jozef Krajčovič</div>
+	 		</div>
+	 	</nav>
+	</footer>
+
+</div> <!-- end of content-->
+
+</div>  <!-- end of wrapper-->
+
 </body>
 </html>
