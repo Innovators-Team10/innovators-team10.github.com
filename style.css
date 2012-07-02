@@ -54,7 +54,7 @@ li
 	background-color: #EFEFEF;
 	border: 1px solid rgb(214,214,214);
 	border-radius: 4px 4px 4px 4px;
-    height:400px;
+    height:405px;
 }
 
 #foot
@@ -75,7 +75,7 @@ a:hover
 {
 	color:#720606;
 	text-decoration:none;
-	font-weight:bold;
+	
 }
 
 #head 
@@ -132,7 +132,7 @@ a:hover
 
 .title2
 {
-	font-size:35px;
+	font-size:30px;
 	text-align:center;
 	padding-top:23px;
 	border-bottom: 1px dotted rgb(226,226,226);
@@ -216,10 +216,6 @@ a:hover
 	text-align:right;
 }
 
-
-.auto-style1 {
-	text-align: center;
-}
 .auto-style2 {
 	margin-left: 83px;
 }

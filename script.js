@@ -1,8 +1,9 @@
 ﻿// for TrollEdit
 // v1.0
  
-//for slide down in about section 
-$(function()
+//for slide down in about section
+
+$(document).ready(function()
 {	
     $('#tech-content').hide();
     
@@ -14,7 +15,7 @@ $(function()
 });
 
 
-$(function()
+$(document).ready(function()
 {	
     $('#screen-content').hide();
     
@@ -26,7 +27,7 @@ $(function()
 });
 
 
-$(function()
+$(document).ready(function()
 {	
     $('#see-content').hide();
     
@@ -38,7 +39,7 @@ $(function()
 });
 
 
-$(function()
+$(document).ready(function()
 {	
     $('#work-content').hide();
     
@@ -49,7 +50,7 @@ $(function()
 	});
 });
 
-$(function()
+$(document).ready(function()
 {	
     $('#features-content').hide();
     
@@ -59,6 +60,76 @@ $(function()
 		return false;
 	});
 });
+
+
+$(document).ready(function()
+{	
+    $('#why-content').hide();
+    
+	$('#why').click(function()
+	{
+		$('#why-content').slideToggle(1500);
+		return false;
+	});
+});
+
+$(document).ready(function()
+{	
+    $('#idea-content').hide();
+    
+	$('#idea').click(function()
+	{
+		$('#idea-content').slideToggle(1500);
+		return false;
+	});
+});
+
+
+
+
+$(document).ready(function()
+{	
+ 	$('#about-content').hide();
+ 	
+	$('#about').click(function()
+	{
+		$('#about-content').slideToggle(1500);
+		return false;
+	});
+});
+
+$(document).ready(function()
+{	
+	$('#contact-content').hide();
+	
+	$('#contact').click(function()
+	{
+		$('#contact-content').slideToggle(1500);
+		return false;
+	});
+});
+
+$(document).ready(function()
+{	
+	$('#team-content').hide();
+	
+	$('#team').click(function()
+	{
+		$('#team-content').slideToggle(1500);
+		return false;
+	});
+});
+
+$(document).ready(function()
+{	
+	$('#download-content').hide();
+	$('#download').click(function()
+	{
+		$('#download-content').slideToggle(1500);
+		return false;
+	});
+});
+
 
 
 
