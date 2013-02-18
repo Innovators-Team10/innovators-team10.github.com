@@ -7,7 +7,7 @@
 <meta name="Robots" content="all, follow">
 <meta name="Author" content="© 2012 Jozef Krajčovič">
 <meta lang="en" name="description" content="TrollEdit - text editor with graphical elements. School project developed on FIIT STU" />
-<meta lang="en" name="keywords" content="trolledit, text editor, fiit, STU"/>
+<meta lang="en" name="keywords" content="trolledit, text editor, fiit, STU, student application, school project, desktop application"/>
 
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <script src="styles_scripts/jquery-1.7.2.min.js"></script>
@@ -28,10 +28,10 @@
  
    <nav id="navigation">
    	<ul id="top-menu" class="menu">
-   		<li><a href="#abou">About</a> </li>
-   		<li><a href="#down">Download</a></li>
-   		<li><a href="#teams">Team</a> </li>
-   		<li><a href="#cont">Contact</a></li>
+   		<li class="menu"><a href="#abou">About</a> </li>
+   		<li class="menu"><a href="#down">Download</a></li>
+   		<li class="menu"><a href="#teams">Team</a> </li>
+   		<li class="menu"><a href="#cont">Contact</a></li>
    	</ul>
    </nav>
    
@@ -40,7 +40,7 @@
        <img alt="logo-trolledit"src="img/logo.png">
      </div>
    </div>  
-   <img alt="scrolling-logo" src="img/start.png" id="show-content">
+   &nbsp;
 </header>
 
 <br/>
@@ -51,7 +51,6 @@
 	<!--About -->
 	<section id="abou">
 		<h2 class="title"> About this <span class="red">project</span></h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="about" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="about-content">
 		<table>
 			<tr>
@@ -74,14 +73,12 @@
 			</tr>
 		</table>
 		<h2 class="title2"> Why to use?</h2>
-			<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="why" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 			<div id="why-content">
 				<p class="center"><img alt="classial-editor" src="img/classical_editor.png"></p>
 				<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
 			</div> 	
 		
 		<h2 class="title2"> Main ideas of project</h2>
-			<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="idea" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 			<div id="idea-content">
 				<p class="center"> <img alt="" src="img/ideas.png" class="padding"></p>
 				<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
@@ -90,7 +87,6 @@
 	<!-- Technology-->
 	<div>	
 		<h2 class="title2"> Used technology</h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="tech" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="tech-content">
 			<div class="center"><img alt="used-technology" src="img/technology.png" onmouseover="this.src='img/technology2.png'"  onmouseout="this.src='img/technology.png'"></div>
 			<p class="text"> Trolledit is a desktop application based on multiplatform Qt framework. Basically TrollEdit is an enhanced text editor developed as a real market product. 
@@ -107,7 +103,6 @@
 	<!-- How to work-->
 	<div>
 		<h2 class="title2">How to work</h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="work" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="work-content">
 			<div class="center"><img alt="how-Work" src="img/how_work.png"></div>
 			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
@@ -117,7 +112,6 @@
 	<!--Actual look-->
 	<div>
 		<h2 class="title2"> Actual look</h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="screen" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="screen-content">
 			<!--Slider-->
 			<div id="pageContainer">
@@ -144,10 +138,16 @@
 	<!--features-->
 	<div>
 		<h2 class="title2"> Actual features</h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="features" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="features-content">
-			<p class=" center"><img alt="features" src="img/features.png"></p>
-			<p class="top"><a href="#github"><img alt="top" src="img/top.png" onmouseover="this.src='img/top1.png'"  onmouseout="this.src='img/top.png'"></a></P>
+				<ul>
+				    <li class="text">Multipatform application (Windows, Mac OS, Linux)</li>
+					<li class="text">Analysign of grammars(C, Lua, XML, Plaint Text</li>	
+					<li class="text">Code visualization as structure of blocks </li>
+					<li class="text">Work in two modes (text mode - simple notepad, graphical mode - text/ source with graphical elements</li>
+					<li class="text">More open files in workspace and move this files (drag&amp;drop) on workspace</li>
+					<li class="text">Insert files (img, .exe, .doc, .pdf) into text/code </li>
+					<li class="text">and more others</li>
+				</ul>	
 		</div>
 	</div>
 	</div>
@@ -156,7 +156,6 @@
 	<!--download-->
 	<section id="down">
 		<h2 class="title">Download <span class="red">TrollEdit</span></h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="download" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="download-content">
 			<p id="worry">you have two choices</p>
 			<div class="center">
@@ -170,7 +169,6 @@
 	<!--Team-->
 	<section id="teams">
 		<h2 class="title"> The members <span class="red">of team</span></h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="team" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="team-content" class="center">
 			<p class="center"><img alt="" src="img/timeline.png"></p>
 			<img alt="peter-drahos" src="img/peter_drahos.png">
@@ -202,7 +200,6 @@
 	<!-- Contact-->
 	<section id="cont">
 		<h2 class="title"> Contact <span class="red">us</span></h2>
-		<p class="arrow"><img alt="slide-down" src="img/arrow.png" id="contact" onmouseover="this.src='img/arrow2.png'"  onmouseout="this.src='img/arrow.png'"></p>
 		<div id="contact-content">
 		<table>
 			<tr>
@@ -230,18 +227,21 @@
 	</section> 
 
 	<div>
-		<p id="end"><img alt="end" src="img/end.png"></p>
+		<p id="end">&nbsp;</p>
 	</div>
  
 	<!--Footer-->
-	<footer id="foot">
+	<footer class="foot">
 		<nav id="navigation">
 			<div id="bottom-nav"> 
-	   			<a href="#abou">About	|</a> 
-	   			<a href="#down">Download	|</a>
-	   			<a href="#teams">Team	|</a> 
+	   			<a href="#abou">About</a> 
+	   			<a href="#down">Download</a>
+	   			<a href="#teams">Team</a> 
 	   			<a href="#cont">Contact</a>
-	   			<div id="foot-copyright">&copy; 2012 TrollEdit - Design by Jozef Krajčovič</div>
+	   			<br/>
+	   			<div id="foot-copyright">
+	   			<p>&copy; 2012 TrollEdit - Design by Jozef Krajčovič</p>
+	   			</div>
 	 		</div>
 	 	</nav>
 	</footer>
