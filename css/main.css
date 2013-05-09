@@ -1,0 +1,199 @@
+﻿/*
+Name:  TrollEdit - text editor with graphical elements
+About: School project
+
+Autor: Jozef Krajčovič
+Version: 1.0
+Date: 2012
+*/
+
+body
+{	
+	background-color: #fff;
+	margin: 0 auto; padding: 0;
+	width: 100%;
+	color: #404040;
+	font-family: sans-serif;
+}
+
+.container-wide {width: 100%; margin: 0 auto;}
+.container {width: 80%; margin: 0 auto; margin-top: 80px; margin-bottom: 20px;}
+
+.center {text-align: center !important;}
+.left {text-align: left !important;}
+.right {text-align: right !important;}
+.justify {text-align:justify !important;}
+
+.grey-background 
+{
+	background-color: #f4f4f4; 
+	border-top: 1px solid rgb(214,214,214); border-bottom: 1px solid rgb(214,214,214);
+}
+
+.tittle {font-size: 200%;} 
+.tittle2 {font-size: 150%;}
+
+.red-font {color: #720606;}
+.normal-font {font-size: 120%; font-family: Raleway, sans-serif; font-weight: 400 !important;}
+
+#navigation 
+{
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%; margin:auto; 
+  text-align: center;
+  border-bottom: 1px solid #D6D6D6;
+  background-color: #fff;  
+  padding-top: 15px; padding-bottom: 15px;
+}
+
+a.active {color: red !important;}
+
+#navigation a 
+{
+	font-size: 103%; font-weight: 300 !important;
+	padding-left: 15px; padding-right: 15px;
+	color: #6A6A6A;
+	text-decoration: none;
+}
+#navigation a:hover{color: #D40505;}
+
+
+/* sections */
+#section-head 
+{
+	background-image:url('../img/head2.png');
+	background-size:cover;
+	height: 520px;
+	padding-top: 120px; padding-bottom: 60px; margin-bottom: 0;
+}
+
+#subSection-about {margin-bottom: 60px;}
+#subSection-about img {margin-top: 40px; margin-bottom: 50px;}
+#subSection-about a {text-decoration:none; color: #720606;}
+
+#subSection-works {margin-top: 74px; padding-bottom: 30px;}
+
+#section-download {margin-top: 80px; padding-bottom: 30px; background-color: #720606; padding-top: 30px;}
+#section-download img {padding-right: 20px;}
+#section-download img:hover {opacity: 0.8; cursor:pointer;}
+
+#section-contact {width: 60% !important; margin: auto; padding-top: 60px; padding-bottom: 20px;}
+#section-contact a:hover {opacity: 0.7; cursor: pointer;}
+
+#section-team {margin-bottom: 135px;}
+#section-team a:hover {opacity: 0.7;}
+
+.button 
+{
+	background-color: rgba(114,6,6,0.8);
+	width: 27%; margin: auto; 
+	border-radius: 8px 8px 8px 8px;
+	color: white;
+	font-size: 110%;
+	padding-top: 10px; padding-bottom: 10px;
+	margin-top: 50px; margin-bottom: 50px;
+	text-align: center;
+}
+.button:hover {opacity: 0.8; cursor:pointer;}
+
+#subSection-fork {display: none;}
+#btn-fork a {text-decoration: none; color: white !important;}
+
+#join-team  {cursor:pointer; padding-bottom: 47px; padding-left: 28px;}
+
+#features-content ul 
+{
+	width: 70%; margin:auto; 
+	padding-top: 30px; padding-bottom: 30px;
+	list-style-type:none;
+}
+#feautures-tittle 
+{	
+	border-bottom: 1px solid rgb(214,214,214); 
+	width: 30%; margin: auto;
+	font-size: 150%;
+}
+
+#features-content {display: none; padding-top: 70px;}
+
+
+/* foot ----------------------------------------------------*/
+#backTop:hover {opacity: 0.8; cursor: pointer;}
+
+footer {margin-top: 100px; font-size: 60%;}
+footer a {text-decoration:none; color: #720606;}
+footer a:hover {opacity: 0.8;}
+.backTop {text-align: right; font-size: 80%; margin-right: 70px; margin-bottom: 100px; margin-top: 130px;}
+
+
+
+/* tooltip ----------------------------------------------------*/
+.tooltip
+{
+   	display: inline;
+    position: relative;
+}
+		
+.tooltip:hover:after
+{
+    background: #720606;
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    font-size: 110% !important;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px}
+		
+.tooltip:hover:before
+{
+    border: solid;
+    border-color: #720606 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/* for img slider */
+#slideshow {
+	margin:0 auto;
+	width:1000px;
+	height:450px;
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:780px;
+  height:500px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+.slide img {box-shadow: 2px 3px 5px 5px rgb(232, 232, 232);} 
+.control {
+  display:block;
+  width:82px;
+  height:80px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:200px;
+  left:10px;
+  background:url('../img/control_left.png') no-repeat 0 0;
+}
+#rightControl {
+  top:200px;
+  right:10px;
+  background:url('../img/control_right.png') no-repeat 0 0;
+}
+
+

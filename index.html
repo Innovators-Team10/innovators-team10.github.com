@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">	
+	<title>TrollEdit | new way of source code editing</title>
+	<meta name="Robots" content="all, follow">
+	<meta name="Author" content="© 2012 Jozef Krajčovič">
+	<meta lang="en" name="description" content="TrollEdit - text editor with graphical elements. School project developed on FIIT STU" />
+	<meta lang="en" name="keywords" content="trolledit, text editor, fiit, STU"/>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+	<header>
+		<div id="navigation">
+			<a href="#section-head"  id="nav-home">Home</a>
+			<a href="#subSection-about" id="nav-about">About</a>
+			<a href="#section-team" id="nav-team">Team</a>
+			<a href="#section-dowload" id="nav-download">Download</a>
+			<a href="#section-contact" id="nav-contact">Contact</a>
+		</div>
+		
+		<div class="containerWide center" id="section-head">
+			<img alt="TrollEdit" src="img/head.png"/>
+		</div><!-- section-head end-->
+    </header>
+    
+   <span id="scroll-about"></span>
+   <div id="wrap">
+   
+    	<div id="section-about">
+    		<div id="subSection-about" class="container center">
+    			<p class="tittle">About <span class="red-font">TrollEdit</span></p>
+    			<p class="normal-font">TrollEdit is (school project at <a class="tooltip" title="School website" href="http://www.fiit.stuba.sk/" target="_blank">Faculty of informatics and information technologies, STU</a>)
+    			 	<span class="red-font">free multiplatform</span> text editor that tries to enrich source code with graphical 
+					elements for easier manipulation.</p>
+				<p><img alt="TrollEdit - multiplatform" src="img/platform.png"></p>
+    		</div><!-- subSection-about -->
+    		
+    		<div id="subSection-look" class="container-wide grey-background center">
+    			<p class="tittle2">Actual look</p>
+    			<!--Slider-->
+				<div id="pageContainer">
+					<div id="slideshow">
+	    				<div id="slidesContainer">
+	      					<div class="slide">
+	      	    				<img src="img/slide1.png" alt="slide1">
+	        				</div>     
+	        	   
+	      					<div class="slide">
+	      						<img src="img/slide2.png" alt="slide2">        
+	     					</div>
+	     		
+	      					<div class="slide">
+	       						<img src="img/slide3.png" alt="slide3">
+	      					</div>
+						</div><!-- slidesContainer -->
+					</div><!-- slideshow -->  
+				</div><!-- pageContainer -->
+    			
+    			<div id="btn-features" class="button center">
+    				Show features
+    			</div><!-- btn-features -->
+    			
+    			<div id="features-content">
+    				<p id="feautures-tittle" class="tittle2">Features for version 1.3.4</p>
+    				<ul class="left normal-font">
+					    <li>• Multipatform application (Windows, Mac OS, Linux)</li>
+						<li>• Analysign of grammars(C, Lua, XML, Plaint Text)</li>	
+						<li>• Code visualization as structure of blocks </li>
+						<li>• Two modes (1.text mode - simple notepad, 2.graphical mode - source with graphical elements</li>
+						<li>• More open files in workspace and move this files (drag&amp;drop) on workspace</li>
+						<li>• Insert files (img, .exe, .doc, .pdf) into text/code </li>
+					</ul>
+					
+					<div id="btn-featuresClose" class="button center">
+    					Close features
+    				</div><!-- btn-featuresClose -->
+    			</div><!-- features-content -->
+    			
+    		</div><!-- subSection-look end-->
+    		
+    		<div id="subSection-technologies" class="container center">
+    			<p class="tittle2">Used technologies</p>
+    			<p><img alt="used-technology" src="img/technology.png" onmouseover="this.src='img/technology2.png'"  onmouseout="this.src='img/technology.png'"></p>
+    			
+    			<p class="justify normal-font"> Trolledit is a desktop application based on multiplatform <span class="red-font">Qt framework</span>. Basically TrollEdit is an enhanced text editor developed as a real market product. 
+			  	It's strongest feature is based on graphical text enrichment based on semantically analyzed file content.
+				</p>
+				
+				<p class="justify normal-font"> The core functionality of TrollEdit is based on the use of <span class="red-font">LPeg</span> pattern matching library. Using this library we are able to parse source code according to 
+	        	its grammar into an abstract syntactic tree (AST). This data is then used to enhance the text visualization and so we are able to parse the content on any
+	        	open file assuming that we have a matching language grammar.
+				</p>
+    		</div><!-- subSection-technologies -->
+    		
+    		<div id="subSection-works" class="container-wide grey-background center">
+    			<p class="tittle2">How to works</p>
+    			<p><img src="img/works.png" alt="TrollEdit - how to works"></p>
+    		</div><!-- subSection-works end -->
+    		
+    	</div><!-- section-about end-->
+    	
+    	<span id="scroll-team"></span>
+    	<div id="section-team" class="container center">
+    		<p class="tittle">Team <span class="red-font">members</span></p>
+    		<p>
+    			<a href="http://www2.fiit.stuba.sk/~drahos/"><img alt="Peter Drahoš" src="img/drahos.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<a href="http://jozefkrajcovic.sk"><img alt="Jozef Krajčovič" src="img/kracovic.png"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<img alt="Team Innovators" src="img/team1.png">
+    		</p>
+    		<br>
+    		<p>
+    			<img alt="Team Ufopak" src="img/ufopak.png">
+    			<img  id="join-team" alt="Add member" src="img/addMember.png" onmouseover="this.src='img/add.png'"  onmouseout="this.src='img/addMember.png'">
+    		</p>
+    	</div><!-- section-team end -->
+    	
+    	<div id="subSection-fork" class="container-wide grey-background center">
+    		<div id="btn-fork" class="button center">
+    				<a href="https://github.com/Innovators-Team10/TrollEdit"> Fork me on GitHub </a>
+    		</div><!-- btn-fork -->
+    	</div><!-- subSection-fork end-->
+    	
+    	<span id="scroll-download"></span>
+    	<div id="section-download" class="container-wide center">
+    		<p>
+    			<a href="https://github.com/Innovators-Team10/TrollEdit/downloads"><img src="img/download.png" alt="TrollEdit - download application"></a>
+    			<a href="download/trolledit-mediaKit.pdf"><img src="img/mediakit.png" alt="TrollEdit - download media kit"></a>
+    		</p>
+    	</div><!-- section-download end -->
+    	
+    	<span id="scroll-contact"></span>
+    	<div id="section-contact" class="container">
+    		<p class="tittle center">Get in <span class="red-font">touch</span></p>
+    		<br>
+    		<p class="left"><a href="mailto:trolledit@googlegroups.com"><img alt="TrollEdit contact" src="img/mail.png"></a></p>
+    		<p class="left"><a href="https://github.com/Innovators-Team10/TrollEdit"><img alt="TrollEdit repo" src="img/repo.png"></a></p>
+    	</div><!-- section-contact end -->
+
+		
+		<div class="container-wide" id="backTop">
+			<p class="backTop"><a href="#" rel="nofollow"><img alt="Backt to top" src="img/top.png"></a></p>
+		</div><!--backTop end-->
+    
+	</div><!-- wrap end -->
+	
+	<footer>
+		<div>
+			<p class="center">
+			&copy; 2012 TrollEdit. Desig by <a href="http://jozefkrajcovic.sk/" title="design by - Jozef Krajčovič" target="_blank">Jozef Krajčovič</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="scripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>
